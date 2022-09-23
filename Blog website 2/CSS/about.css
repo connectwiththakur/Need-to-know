@@ -1,0 +1,36 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: azure;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+
+
+.about{
+    width:50vw;
+    /* background-color: antiquewhite; */
+    margin: 8rem 0 0 5rem;
+    border-radius: 10px;
+}
+
+.img{
+    /* background-color: aqua; */
+
+    width:50vw;
+    height: 80vh;
+    margin: 8rem 0 5rem 0rem;
+    border-radius: 10px;
+}
+
+.img img{
+    width: 40vw;
+}

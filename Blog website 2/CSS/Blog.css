@@ -1,0 +1,107 @@
+section .Header-Image {
+    /* background-image: url(/Images/Tesla\ Phone.jpg); */
+    display: block;
+    width: 50%;
+    /* height: 10vh; */
+    /* background-color: aqua; */
+    margin: 8rem auto 5rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 40px var(--shaddow);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: black;
+    box-shadow:  0 4px 40px var(--shaddow);
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+
+section .Header-Image img {
+    filter: brightness(20%);
+    width: 100%;
+
+
+}
+
+
+.main-blog {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns:70% 30%;
+    width: 95vw;
+    /* height: 1000px; */
+    margin: 0 auto;
+}
+
+section .main-blog .content-blog {
+    background-color: white;
+    height: 100%;
+    display: flex;
+}
+
+section .main-blog .content-blog p{
+    padding: 50px;
+    line-height: 2.5rem;
+    letter-spacing:.01rem;
+    font-weight: 400;
+}
+
+section .main-blog .misc{
+    background-color: white;
+    margin-left:1rem;
+    height: 100%;
+    box-shadow:  0 4px 40px var(--shaddow);
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+
+}
+
+section .main-blog .misc img{
+overflow: hidden;
+}
+
+
+
+@media screen and (max-width:1200px){
+  
+    section .main-blog .content-blog{
+        grid-template-columns: 100%;
+        flex-wrap: wrap;
+    }
+
+    section .main-blog .misc{
+        margin-right: 1%;
+    }
+
+    section .Header-Image{
+        flex-wrap: wrap !important;
+        width: 100% !important;
+    }
+
+    .main-blog{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+    section .main-blog .misc{
+        display: none;
+    }
+
+    .main-blog{
+    grid-template-columns: 1fr;
+    }
+
+    section .main-blog .content-blog p{
+        line-height: 1.9rem;
+        padding: 5px 20px;
+
+    }
+}
